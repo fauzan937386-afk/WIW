@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="navy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WIW (Website in Website)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-row">
+      <div class="header">
+        <div class="header-icon">🌐</div>
+        <div>
+          <h1 class="header-title">WIW</h1>
+          <span class="header-subtitle">Website in Website</span>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <button id="btnRandom" class="action-btn" title="Buka Website Acak">🎲 Acak</button>
+        <select id="themeSelect" class="theme-selector">
+          <option value="navy">Navy Dark</option>
+          <option value="light">Light Mode</option>
+          <option value="cyberpunk">Cyberpunk</option>
+          <option value="emerald">Emerald</option>
+          <option value="oled">OLED Black</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="subtitle">Pintu gerbang menuju ratusan situs web berguna & unik di internet.</p>
+
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-input" placeholder="Cari website, tools, atau game...">
+    </div>
+
+    <div class="categories">
+      <button class="category-btn active" id="btn-all">
+        🌐 Semua (<span id="count-all">0</span>)
+      </button>
+
+      <button class="category-btn" id="btn-fav">
+        ⭐ Favorit (<span id="count-fav">0</span>)
+      </button>
+
+      <button class="category-btn" id="btn-useful">
+        🛠️ Sangat Berguna (<span id="count-useful">0</span>)
+      </button>
+
+      <button class="category-btn" id="btn-fun">
+        🎮 Hiburan & Unik (<span id="count-fun">0</span>)
+      </button>
+    </div>
+
+    <div id="webGrid" class="web-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
